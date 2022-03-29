@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  font-size: 16px;
+  z-index: 100;
+}
+
+/* Top right Text + Arrow */
+nav > div {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5em;
+  align-items: center;
+}
+
+.fa-angles-down {
+  color: orange;
+}
+
+.boldedWord {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Tweeter Word */
+nav > span {
+  font-family: 'Bungee', cursive;
+  font-size: 48px;
+  padding-left: 1.5em;
+}
+
+#topRightText {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+}
+
