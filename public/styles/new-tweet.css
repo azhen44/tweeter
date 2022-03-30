@@ -30,3 +30,13 @@
   margin-top: 5px;
   font-weight: bold;
 }
+
+.new-tweet div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter.redFont {
+  color: red;
+}
