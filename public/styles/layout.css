@@ -31,10 +31,62 @@ main {
   flex-direction: column;
   height: 900px;
   width: 90%;
-  background-color: f4f1ec;
+  background-color: #f4f1ec;
   flex-wrap: wrap;
-  row-gap: 1px;
+ }
+
+ article.tweet-container {
+   display: flex;
+   background-color: #f4f1ec;
+   border: 5px solid black;
+   flex-direction: column;
+ }
+
+ article.tweet-container > header {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 0.5em;
+  background-color: #f4f1ec;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .fullName {
+   font-weight: bold;
+ }
+ .tagName {
+   color: burlywood;
+ }
  
+ .tweet {
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+ }
+
+
+ article.tweet-container > footer {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 0.5em;
+  justify-content: space-between;
+  font-size: 15px;
+  padding-bottom: 10px;
+ }
+
+
+ article.tweet-container .icons {
+   display: flex;
+ }
+
+ .fa-solid:hover {
+   color: aquamarine;
 
  }
  
