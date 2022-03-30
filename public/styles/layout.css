@@ -10,24 +10,31 @@ html {
   box-sizing: inherit;
 }
 
-body > nav {
-  font-family: 'Bungee', cursive;
-  font-size: 80px;
-}
-
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-weight: 300;
-}
-
-.boldedWords {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
+  align-items: center;
+  
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  width: 90%;
+  background-color: f4f1ec;
+  flex-wrap: wrap;
+  row-gap: 1px;
+ 
+
+ }
+ 
