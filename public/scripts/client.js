@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 const createTweetElement =  (tweetData) => {
-  const $article = $(`<article>`).addClass("tweet-container");
+  const $article = $(`<article id="tweetBox">`).addClass("tweet-container");
 
   //Creates the Header of the Tweet------------------------
   const tweetHeader = $(`<header>`).addClass("tweetHeader");

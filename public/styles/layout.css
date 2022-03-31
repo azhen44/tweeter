@@ -35,13 +35,18 @@ main {
  }
 
  /* For tweets */
- article.tweet-container {
+ .tweets-container > .tweet-container:hover {
+  box-shadow: 10px 10px 10px darkgray;
+ }
+ .tweet-container {
    display: flex;
    background-color: #f4f1ec;
    border: 5px solid black;
    flex-direction: column;
    margin-bottom: 20px;
  }
+
+
 
  article.tweet-container > header {
   display: flex;
