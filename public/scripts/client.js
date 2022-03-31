@@ -20,7 +20,8 @@ const createTweetElement =  (tweetData) => {
 
   //Footer of Tweer
   const tweetFooter = $(`<footer>`).addClass('tweetFooter');
-  const date = $(`<span>`).text(`${tweetData.created_at}`);
+  const formattedDate = timeago.format(tweetData.created_at);
+  const date = $(`<span>`).text(formattedDate);
   const icons = $(`<div>`).addClass('icons');
   icons.append(`<i class="fa-solid fa-flag"></i>`, `<i class="fa-solid fa-retweet"></i>`,`<i class="fa-solid fa-heart"></i>`);
   tweetFooter.append(date,icons);
@@ -48,17 +49,55 @@ const loadTweets = () => {
 $(() => {
   loadTweets();
 
-
+  // Listening for form Submission --------------------------------------------------
   $("form").on('submit', function (event) {
-    console.log(event)
     event.preventDefault();
+    const input = 140 - $(this).children('div').children('.counter').val();
+
+    // Checks amount of Char entered. Outputs an error message if its too long or empty.
+    if (input > 140) {
+      $('.errorMsg').text('Message too long');
+      return;
+    } else {
+      $('.errorMsg').text('');
+    }
+
+    if (input === 0) {
+      $('.errorMsg').text('Empty Message');
+      return;
+    } else {
+      $('.errorMsg').text('');
+    }
+
     $.ajax({
       url: '/tweets/',
       type: 'POST',
       data: $('form').serialize()
    
     }).then((data) => {
+      $('#tweet-text').val('');
+      $('.counter').val('140')
       loadTweets();
+      
     })
   })
+  //--------------------------------------------------------------------------------
+  $('#topButton').hide();
+  $(window).scroll( () => {
+    if ($(this).scrollTop() > 1000) {
+      console.log($(this).scrollTop())
+      $('#topButton').show();
+    } else {
+      $('#topButton').hide();
+    }
+  });
+
+
+
+  $('#topButton').on('click', () => {
+    $("html, nav").animate({ scrollTop: "0" });
+    $('#tweet-text').focus();
+  })
+
+  
 });

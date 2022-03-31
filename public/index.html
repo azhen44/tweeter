@@ -20,6 +20,7 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -52,7 +53,10 @@
       <section class="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
         <form method="POST" action="/tweets/">
-          <label for="tweet-text">What are you humming about?</label>
+          <div id="msgPosition">
+            <label for="tweet-text">What are you humming about?    </label>
+            <span class="errorMsg"></span>
+          </div>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
             <button id="submitTweet" type="submit">Tweet</button>
@@ -62,30 +66,11 @@
       </section>
 
       <section class="tweets-container">
-        <!-- <article class="tweet-container">
-          <header class="tweetHeader">
-            <div id="nameAndPic">
-              <img class="avatar" src=https://i.imgur.com/73hZDYK.png>
-              <span class="fullName">Rohda Jacobs</span>
-            </div>
-            <span class="tagName">@MrsJacobs</span>            
-          </header>
-          <div class="tweet">
-            This is a tweet. his is a tweethis is a tweethis is a tweethis is a tweethis is a his is a tweethis is a tweethis is a tweettweet
-          </div>
-          <footer class="tweetFooter">
-            <span>10 days ago</span>
-            <div class="icons">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
-          </div>
-          </footer>
-        </article> -->
+       
       </section>
 
- 
-
+      
+      <i id="topButton" class="fa-regular fa-square-caret-up"></i>
      
 
 

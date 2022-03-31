@@ -13,6 +13,7 @@
   border: none;
   border-bottom: 5px solid black;
   margin-bottom: 20px;
+  padding-top: 24px;
 }
 
 .counter {
@@ -41,3 +42,18 @@
 .counter.redFont {
   color: red;
 }
+
+.errorMsg {
+  font-family: 'Bungee', cursive;
+  color: red;
+  font-weight: bolder;
+
+}
+
+#msgPosition {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 150px;
+}
+
+
