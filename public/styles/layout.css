@@ -47,7 +47,7 @@ main {
  }
 
 
-
+  /* Header of the Tweet. Full Name, Avatar and Handle*/
  article.tweet-container > header {
   display: flex;
   height: 30%;
@@ -62,8 +62,6 @@ main {
   justify-content: space-between;
  }
 
-
- /* Header of the Tweet. Full Name, Avatar and Handle*/
  img.avatar {
    width: 64px;
    height: auto;
@@ -84,15 +82,13 @@ main {
    color: burlywood;
  }
  
-
- 
  div.tweet {
   display: flex;
   padding-right: 20px;
   padding-left: 20px;
  }
 
-
+/* footer of the tweet */
  article.tweet-container > footer {
   display: flex;
   height: 30%;
@@ -105,7 +101,6 @@ main {
   padding-bottom: 10px;
  }
 
-
  article.tweet-container .icons {
    display: flex;
  }
@@ -115,15 +110,14 @@ main {
  }
 
 
-
+/* Button to return to top of page */
  #topButton {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  font-size: 70px;
-  color: #4056A1;
-  overflow: auto;
-  clear: both;
+  padding-left: 10px;
+  font-size: 80px;
+  color: #4056A1; 
 }
 
 
