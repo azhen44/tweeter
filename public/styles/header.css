@@ -12,6 +12,7 @@ header {
   align-content: flex-start;
   background-color: #e36a00;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  margin-bottom: 24px;
 }
   
 #profileName {

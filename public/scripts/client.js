@@ -82,6 +82,9 @@ $(() => {
     })
   })
   //--------------------------------------------------------------------------------
+
+
+  // Scrolls to the top of page when scrolling down too far.
   $('#topButton').hide();
   $(window).scroll( () => {
     if ($(this).scrollTop() > 1000) {
@@ -92,12 +95,23 @@ $(() => {
     }
   });
 
-
-
   $('#topButton').on('click', () => {
     $("html, nav").animate({ scrollTop: "0" });
     $('#tweet-text').focus();
   })
+
+  // Toggles the form section of the page.
+  $('#topRightText').on('click', () => {
+    if ($('form').is(':visible')) {
+      $('form').slideUp(1000);
+    } else {
+      $('form').slideDown(1000);
+      $('#tweet-text').focus();
+    }
+  })
+
+
+
 
   
 });
