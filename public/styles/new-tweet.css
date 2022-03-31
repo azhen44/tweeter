@@ -19,7 +19,7 @@
   font-family: 'Bungee', cursive;
 }
 
-.new-tweet button {
+#submitTweet {
   color: white;
   background-color: #4056A1;
   font-family: 'Bungee', cursive;
