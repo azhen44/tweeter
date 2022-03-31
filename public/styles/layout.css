@@ -32,15 +32,16 @@ main {
   height: 900px;
   width: 90%;
   background-color: #f4f1ec;
-  flex-wrap: wrap;
+  
  }
 
+ /* For tweets */
  article.tweet-container {
    display: flex;
    background-color: #f4f1ec;
    border: 5px solid black;
    flex-direction: column;
-   margin-bottom: 150px;
+   margin-bottom: 75px;
  }
 
  article.tweet-container > header {
@@ -50,17 +51,35 @@ main {
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 0.5em;
+  padding-bottom: 1em;
   background-color: #f4f1ec;
   flex-direction: row;
   justify-content: space-between;
  }
 
+
+ /* Header of the Tweet. Full Name, Avatar and Handle*/
+ img.avatar {
+   width: 64px;
+   height: auto;
+ }
+
+ #nameAndPic {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
  .fullName {
+   padding-left: 5px;
+   font-size: 16px;
    font-weight: bold;
  }
  .tagName {
    color: burlywood;
  }
+ 
+
  
  .tweet {
   display: flex;
