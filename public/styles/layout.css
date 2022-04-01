@@ -120,5 +120,39 @@ main {
   color: #4056A1; 
 }
 
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+    top: 150px;
+  }
+
+  body > header {
+    width: 33%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+  body > main {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  div#topRightText, span > .boldedWord   {
+    font-size: 16px;
+    padding-left: 5px;
+    /* justify-content: center;
+    align-items: center; */
+    align-content: center;
+  }
+
+ 
+  
+}
 
 
